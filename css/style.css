@@ -1,0 +1,120 @@
+header{
+    background-color: rgb(53, 66, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 15 px;
+}
+.contenido-gestion{
+    width: 20px;
+    height: 20px;
+}
+.contenedor-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.contenedor-flex-gestion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (2, 30vh);
+}
+
+.contenedor-flex-gestion img {
+    width: 35vw;
+    height: 60vh;
+}
+.titulo-footer{
+    list-style: none;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(70, 214, 246);
+    display: flex;
+}
+section div img{
+    width: 500px;
+    height: 600px;
+}
+
+.conocenos-inicio img{
+    width: 70vw;
+}
+.conocenos-inicio video{
+    width: 70vw;
+}
+
+section p{
+    text-align: center;
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    .contenedor-flex{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    .card-text{
+        width: 5vw;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 5px;
+    }
+    header nav ul{
+        list-style: none;
+        column-gap: 20px;
+        font-size: 25px;
+        flex-direction: column;
+    }
+    
+    header img{
+        width: 60vw;
+    }
+    .contenedor-flex-gestion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: (3, 30vh);
+    }
+    .contenedor-flex-gestion img{
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .conocenos-inicio img{
+        width: 80vw;
+    }
+    .conocenos-inicio video{
+        width: 80vw;
+    }
+
+    
+
+}
